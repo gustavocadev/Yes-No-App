@@ -25,13 +25,16 @@ export default function Page({ data }: PageProps<Answer | null>) {
   return (
     <>
       <div class="mx-auto relative w-full h-screen flex flex-col text-white">
-        <figure class="h-full w-full absolute z-10">
-          <img
-            src={data?.image}
-            alt="Imagen Gif random"
-            class="h-full w-full"
-          />
-        </figure>
+        {data?.image && (
+          <figure class="h-full w-full absolute z-10">
+            <img
+              src={data.image}
+              alt="Imagen Gif random"
+              class="h-full w-full"
+            />
+          </figure>
+        )}
+
         {/* Overlay */}
         <div class="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-[0.4] z-20">
         </div>
