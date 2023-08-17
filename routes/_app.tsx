@@ -6,9 +6,9 @@ export default function App({ Component }: AppProps) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Yes Or No</title>
+        <title>Yes Or No App</title>
       </head>
-      <body>
+      <body class="bg-[#86efac]">
         <Component />
       </body>
     </html>
